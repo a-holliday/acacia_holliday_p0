@@ -137,6 +137,10 @@ public class BankServiceImpl implements BankService {
 			if (getAccount(payingBank, payingUser).getBalance() >= amount) {
 			getAccount(payingBank, payingUser).withdrawal(amount);
 			}
+			else {
+				System.out.println("Not enough funds");
+				return;
+			}
 			}catch(NullPointerException e){
 				System.out.println("User not found");
 			}

@@ -77,6 +77,16 @@ public class UserServiceTest {
 
   }
   
-  
+  @Test
+  public void insufficientFundsTransfer() {
+	  System.out.println("User Balance before transfer " + userService.authenticate("Acacia", "1234").getAccount().getBalance());
+
+	  userService.getBankService().transferAccount
+		(userService.getBankService().getBankFromName("Wells Fargo"), "Kirby",
+				userService.getBankService().getBankFromName("Chase"), "Acacia", 50.0);
+		assertEquals((userService.authenticate("Kirby", "password").getAccount().getBalance()), 0.0, 0.001);
+
+	  
+  }
 
 }
