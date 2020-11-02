@@ -48,7 +48,7 @@ public class UserServiceTest {
 		assertEquals(userService.authenticate("Acacia", "1234")
 				.getAccount().getBalance(), 50.0, 0.001);
 
-		
+	
 	}
 	
 	
@@ -64,5 +64,19 @@ public class UserServiceTest {
 				(userService.getBankService()
 						.getBankFromName("Wells Fargo"), "Kirby").getBalance(), 50.0, 0.001);
 	}
+	
+  @Test
+  public void testUserDidntTransferIncorrectCredentials() {
+		userService.authenticate("Acacia", "1234").getAccount().deposit(100.0);
+		userService.getBankService().transferAccount(userService.getBankService().getBankFromName("Chase"), "Kirby", 
+				userService.getBankService().getBankFromName("Chase"), "Acacia", 10.0);
+		assertEquals((userService.getBankService().getAccount
+				(userService.getBankService()
+						.getBankFromName("Wells Fargo"), "Kirby")).getBalance(), 0.0, 0.001);
+		assertEquals((userService.authenticate("Acacia", "1234").getAccount().getBalance()), 100.0, 0.001);
+
+  }
+  
+  
 
 }

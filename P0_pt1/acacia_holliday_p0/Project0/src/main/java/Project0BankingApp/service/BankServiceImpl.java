@@ -130,11 +130,19 @@ public class BankServiceImpl implements BankService {
 	public void transferAccount(Bank recievingBank, String recievingUser,
 			Bank payingBank, String payingUser, double amount) {
 		try {
-		getAccount(payingBank, payingUser).withdrawal(amount);
+			if (getAccount(payingBank, payingUser).getBalance() >= amount) {
+			getAccount(payingBank, payingUser).withdrawal(amount);
+			}
+			}catch(NullPointerException e){
+				System.out.println("User not found");
+			}
+		
+		try {
 		getAccount(recievingBank, recievingUser).deposit(amount);
 		}
 		catch(NullPointerException e) {
-			System.out.println("Funds did not transfer");
+			System.out.println("User not found");
+			getAccount(payingBank, payingUser).deposit(amount);
 		}
 	}
 		
