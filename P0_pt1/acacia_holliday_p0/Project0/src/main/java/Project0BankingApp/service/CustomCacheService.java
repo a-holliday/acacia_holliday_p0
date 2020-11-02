@@ -26,7 +26,6 @@ public interface CustomCacheService <T>{
 				
 		public Set<T> retrieveAllItems();
 		
-		public Set<T> retrieveMatching(Predicate<T> p);
 
 		
 		
