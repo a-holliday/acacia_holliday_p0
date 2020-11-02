@@ -18,6 +18,11 @@ public class BankingDriver {
 	Bank userBank;
 	Scanner scan = new Scanner(System.in);
 
+	/**
+	 *Drives the main program with the methods, main functionality is through a case statement in 
+	 *loop 
+	 * @param args
+	 */
 	
 	public static void main(String[] args) {
 		
@@ -59,6 +64,10 @@ public class BankingDriver {
 		
 	}
 	
+	/**
+	 * Prints a menu for the user
+	 */
+	
 	public void printMenu() {
 		System.out.println("Welcome to the Banking System");
 		System.out.println("Options:");
@@ -71,6 +80,11 @@ public class BankingDriver {
 		
 		
 	}
+	
+	/**
+	 * Creates new user
+	 * @return
+	 */
 
 	public boolean createNewUser() {
 		System.out.println("What is your bank called?");
@@ -94,7 +108,9 @@ public class BankingDriver {
 
 	}
 		
-	
+	/**
+	 * Deposits into authenticated user account
+	 */
 
 
  public void deposit() {
@@ -106,6 +122,10 @@ public class BankingDriver {
 	 }
  }
  
+ /**
+  * Withdraws from authenticated user account
+  */
+ 
  public void withdrawal() {
 	if(authentication()) {
 	 System.out.println("Enter amount to withdraw");
@@ -116,6 +136,9 @@ public class BankingDriver {
 	 
  }
  
+ /**
+  * Prints all transactions that are alive for the length of the program
+  */
  public void printStatement() {
 	if(authentication()) {
 		 System.out.println("Bank Statment");
@@ -125,6 +148,10 @@ public class BankingDriver {
 	}
 	 
  }
+ 
+ /**
+  * Performs transfer between two  accounts
+  */
  
  public void transfer() {
 	 if(authentication()) {
@@ -140,6 +167,10 @@ public class BankingDriver {
 	 }
  }
  
+ /**
+  * Authentication that is run initially before other methods besides createUser
+  * @return
+  */
  public boolean authentication() {
 		 System.out.println("What is your banks name?");
 		 String bankName = scan.nextLine();

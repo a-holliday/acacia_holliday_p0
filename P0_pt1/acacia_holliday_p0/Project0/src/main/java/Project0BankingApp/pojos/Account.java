@@ -79,22 +79,10 @@ public class Account {
 	public void printStatement() {
 		System.out.println(transactions);
 	}
-	/**
-	 * TODO - finish documentation for transfer
-	 * @param transferAmount
-	 * @param bankID
-	 * @param accountNo
-	 * @return
-	 */
 	
-	/*public double transfer(double transferAmount, String bankName, String recievingUsername) {
-		//TODO figure how to implement this with cache
-		return transferAmount;	
-	}
-	
-	 */
-
-
+/**
+ * Overrides equals to check if accounts match
+ */
 
 	@Override
 	public boolean equals(Object obj) {

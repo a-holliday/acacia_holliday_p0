@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter;
 /**
  * 
  * @author Acacia Holliday
+ * Transaction class that keeps up with transactions made in the bank program
  * 
  *
  */
@@ -32,6 +33,10 @@ public class Transaction {
 	}
 
 
+	/**
+	 * Overloads to String method with a string that gives information about 
+	 * tranasaction type amount and balance
+	 */
 	@Override
 	public String toString() {
 		return "Transaction [transactionType=" + transactionType + ", transactionAmount=" + transactionAmount

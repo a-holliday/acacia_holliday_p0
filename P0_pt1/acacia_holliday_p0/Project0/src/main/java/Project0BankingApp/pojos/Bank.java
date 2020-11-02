@@ -4,6 +4,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Bank {
+	
+	/**
+	 * Bank pojo that keeps up with number of accounts and accounts for each bank instance
+	 */
 	private int numOfBanks = 0;
 	private int numOfAccounts = 0;
 	private Set<Account> accounts;
@@ -19,6 +23,7 @@ public class Bank {
 		
 	}
 	
+	 
 	
 	public Set<Account> getAccounts() {
 		return accounts;

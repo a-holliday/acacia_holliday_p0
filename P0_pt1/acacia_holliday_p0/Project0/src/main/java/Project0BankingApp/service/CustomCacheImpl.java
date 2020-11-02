@@ -65,15 +65,6 @@ public class CustomCacheImpl<T> implements CustomCacheService<T> {
 		}
 		return null;
 	}
-	/**
-	 * TODO - need to check if there is a use case for this
-	 */
-
-	@Override
-	public Set<T> retrieveMatching(Predicate<T> p) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }
 

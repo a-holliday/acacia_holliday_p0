@@ -111,6 +111,10 @@ public class BankServiceImpl implements BankService {
 		}
 		
 	}
+	
+	/**
+	 * @return - a Bank object is returned from String input
+	 */
 
 	@Override
 	public Bank getBankFromName(String bankName) {

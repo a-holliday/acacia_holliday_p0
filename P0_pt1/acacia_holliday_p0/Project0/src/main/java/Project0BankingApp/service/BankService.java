@@ -4,6 +4,11 @@ package Project0BankingApp.service;
 import Project0BankingApp.pojos.Account;
 import Project0BankingApp.pojos.Bank;
 
+/**
+ * 
+ * Defines the methods to be implemented by a bank service implementation
+ *
+ */
 public interface BankService {
 	
 	public void createBank(String bankName);
