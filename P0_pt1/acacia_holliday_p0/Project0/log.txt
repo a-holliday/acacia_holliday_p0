@@ -1,2 +1,6 @@
 2020-11-02 16:22:27 INFO  root:30 - Program has started
 2020-11-02 16:23:11 INFO  root:106 - Created user: Acacia
+2020-11-03 11:13:34 INFO  root:30 - Program has started
+2020-11-03 11:14:14 INFO  root:111 - Created user: Acacia Holliday
+2020-11-03 11:26:35 INFO  root:31 - Program has started
+2020-11-03 11:26:58 INFO  root:112 - Created user: 1234

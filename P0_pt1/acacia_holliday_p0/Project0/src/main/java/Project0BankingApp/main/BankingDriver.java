@@ -2,6 +2,7 @@ package Project0BankingApp.main;
 
 import java.util.Scanner;
 
+
 import org.apache.log4j.Logger;
 
 import Project0BankingApp.pojos.Account;
@@ -89,6 +90,11 @@ public class BankingDriver {
 	public boolean createNewUser() {
 		System.out.println("What is your bank called?");
 		String bankName = scan.nextLine();
+		bankName = bankName.toUpperCase();
+		if (!Bank.getAvailableBanks().contains(bankName)) {
+			System.out.println("Not a valid Bank");
+			return false;
+		}
 		if(userService.getBankService().getBankFromName(bankName) == null) {
 			userService.getBankService().createBank(bankName);
 			userBank = userService.getBankService().getBankFromName(bankName);
@@ -157,6 +163,7 @@ public class BankingDriver {
 	 if(authentication()) {
 		 System.out.println("What is the recieving bank called?");
 		 String recievingBankName = scan.nextLine();
+		 recievingBankName = recievingBankName.toUpperCase();
 		 Bank recievingBank = userService.getBankService().getBankFromName(recievingBankName);
 		 System.out.println("What is the recieving username");
 		 String recievingUsername = scan.nextLine();
@@ -174,6 +181,7 @@ public class BankingDriver {
  public boolean authentication() {
 		 System.out.println("What is your banks name?");
 		 String bankName = scan.nextLine();
+		 bankName = bankName.toUpperCase();
 		 if(userService.getBankService().getBankFromName(bankName) == null) {
 			 System.out.println("Couldn't find bank");
 			 return false;

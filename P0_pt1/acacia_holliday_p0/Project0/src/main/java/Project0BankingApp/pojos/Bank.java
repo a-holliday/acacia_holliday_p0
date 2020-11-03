@@ -1,6 +1,9 @@
 package Project0BankingApp.pojos;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Bank {
@@ -8,12 +11,51 @@ public class Bank {
 	/**
 	 * Bank pojo that keeps up with number of accounts and accounts for each bank instance
 	 */
+	
 	private int numOfBanks = 0;
 	private int numOfAccounts = 0;
 	private Set<Account> accounts;
 	private int bankID;
 	private String bankName;
+	private static List<String> availableBanks = new ArrayList<String>(Arrays.asList("CHASE", "WELLS FARGO", "FIFTH THIRD BANK", 
+			"BANK OF AMERICA"));
 	
+	/**
+	 * @return the numOfBanks
+	 */
+	public int getNumOfBanks() {
+		return numOfBanks;
+	}
+
+
+
+	/**
+	 * @param numOfBanks the numOfBanks to set
+	 */
+	public void setNumOfBanks(int numOfBanks) {
+		this.numOfBanks = numOfBanks;
+	}
+
+
+
+	/**
+	 * @return the availableBanks
+	 */
+	public static List<String> getAvailableBanks() {
+		return availableBanks;
+	}
+
+
+
+	/**
+	 * @param availableBanks the availableBanks to set
+	 */
+	public static void setAvailableBanks(List<String> availableBanks) {
+		Bank.availableBanks = availableBanks;
+	}
+
+
+
 	public Bank(String bName, HashSet<Account> accounts) {
 		numOfBanks++;
 		this.bankName = bName;
@@ -37,7 +79,7 @@ public class Bank {
 	public void setBankID(int bankID) {
 		this.bankID = bankID;
 	}
-	public String getBankName() {
+	public  String getBankName() {
 		return bankName;
 	}
 	public void setBankName(String bankName) {
