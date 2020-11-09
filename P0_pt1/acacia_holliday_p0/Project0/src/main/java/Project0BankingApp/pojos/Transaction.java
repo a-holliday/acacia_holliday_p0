@@ -13,6 +13,9 @@ import java.time.format.DateTimeFormatter;
 
 public class Transaction {
 	
+	
+
+
 	private String transactionType;
 	private double transactionAmount;
 	private double balance;
@@ -30,6 +33,69 @@ public class Transaction {
 		this.transactionAmount = tAmount;
 		this.timeStamp = LocalDateTime.now().format(formatter);
 		this.balance = balance;
+	}
+	
+	/**
+	 * @return the transactionType
+	 */
+	public String getTransactionType() {
+		return transactionType;
+	}
+
+
+	/**
+	 * @param transactionType the transactionType to set
+	 */
+	public void setTransactionType(String transactionType) {
+		this.transactionType = transactionType;
+	}
+
+
+	/**
+	 * @return the transactionAmount
+	 */
+	public double getTransactionAmount() {
+		return transactionAmount;
+	}
+
+
+	/**
+	 * @param transactionAmount the transactionAmount to set
+	 */
+	public void setTransactionAmount(double transactionAmount) {
+		this.transactionAmount = transactionAmount;
+	}
+
+
+	/**
+	 * @return the balance
+	 */
+	public double getBalance() {
+		return balance;
+	}
+
+
+	/**
+	 * @param balance the balance to set
+	 */
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+
+	/**
+	 * @return the timeStamp
+	 */
+	public String getTimeStamp() {
+		return timeStamp;
+	}
+
+
+	/**
+	 * @param timeStamp the timeStamp to set
+	 */
+	public void setTimeStamp(String timeStamp) {
+		this.timeStamp = timeStamp;
 	}
 
 

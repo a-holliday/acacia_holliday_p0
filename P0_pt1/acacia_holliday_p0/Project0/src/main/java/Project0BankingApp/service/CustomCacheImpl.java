@@ -4,7 +4,6 @@ package Project0BankingApp.service;
 import java.util.HashSet;
 
 import java.util.Set;
-import java.util.function.Predicate;
 
 public class CustomCacheImpl<T> implements CustomCacheService<T> {
 	private Set<T> cache = new HashSet<T>();

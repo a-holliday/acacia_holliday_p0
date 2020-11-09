@@ -1,7 +1,6 @@
 package Project0BankingApp.service;
 
 import java.util.Set;
-import java.util.function.Predicate;
 
 public interface CustomCacheService <T>{
 	/**

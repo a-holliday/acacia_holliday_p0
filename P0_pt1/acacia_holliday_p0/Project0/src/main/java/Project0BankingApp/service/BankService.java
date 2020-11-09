@@ -26,8 +26,12 @@ public interface BankService {
 	
 	public Account getAccount(Bank bank, String username);
 	
+	
+
 	public void addAccount(Bank bank, Account account);
 	
+	
+
 	public void transferAccount(Bank recievingBank, String recievingUser, 
 			Bank payingBank, String payingUser, double amount);
 }

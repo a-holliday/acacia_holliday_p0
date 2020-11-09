@@ -4,3 +4,25 @@
 2020-11-03 11:14:14 INFO  root:111 - Created user: Acacia Holliday
 2020-11-03 11:26:35 INFO  root:31 - Program has started
 2020-11-03 11:26:58 INFO  root:112 - Created user: 1234
+2020-11-04 11:45:44 INFO  root:31 - Program has started
+2020-11-04 11:47:04 INFO  root:112 - Created user: Acacia
+2020-11-04 14:20:49 INFO  root:31 - Program has started
+2020-11-04 14:21:52 INFO  root:31 - Program has started
+2020-11-04 14:22:02 INFO  root:112 - Created user: Acacia
+2020-11-04 14:22:57 INFO  root:200 - Invalid logging attempt for username: Acacia 
+2020-11-04 14:24:32 INFO  root:31 - Program has started
+2020-11-04 14:24:42 INFO  root:112 - Created user: Acacia
+2020-11-04 14:25:49 INFO  root:112 - Created user: Kirby
+2020-11-05 10:00:05 INFO  root:31 - Program has started
+2020-11-05 10:00:17 INFO  root:112 - Created user: Acacia
+2020-11-05 10:01:59 INFO  root:112 - Created user: Kirby
+2020-11-05 13:37:18 INFO  root:31 - Program has started
+2020-11-05 13:39:43 INFO  root:112 - Created user: Acacia
+2020-11-05 13:40:11 INFO  root:200 - Invalid logging attempt for username: Jim
+2020-11-05 13:41:11 INFO  root:200 - Invalid logging attempt for username: Jim
+2020-11-05 13:42:06 INFO  root:112 - Created user: Sally
+2020-11-05 13:43:59 INFO  root:200 - Invalid logging attempt for username: 1234
+2020-11-05 16:09:29 INFO  root:31 - Program has started
+2020-11-05 16:10:05 INFO  root:112 - Created user: Acacia
+2020-11-05 16:10:23 INFO  root:200 - Invalid logging attempt for username: Acacia
+2020-11-05 16:12:22 INFO  root:112 - Created user: Sally

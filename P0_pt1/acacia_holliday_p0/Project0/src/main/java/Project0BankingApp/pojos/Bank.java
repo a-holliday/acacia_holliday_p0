@@ -12,7 +12,7 @@ public class Bank {
 	 * Bank pojo that keeps up with number of accounts and accounts for each bank instance
 	 */
 	
-	private int numOfBanks = 0;
+	private static int numOfBanks = 0;
 	private int numOfAccounts = 0;
 	private Set<Account> accounts;
 	private int bankID;
@@ -33,7 +33,7 @@ public class Bank {
 	 * @param numOfBanks the numOfBanks to set
 	 */
 	public void setNumOfBanks(int numOfBanks) {
-		this.numOfBanks = numOfBanks;
+		numOfBanks = numOfBanks;
 	}
 
 
