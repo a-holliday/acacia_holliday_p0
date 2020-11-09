@@ -1,5 +1,6 @@
 package Project0_2.dao;
 
+import org.apache.log4j.Logger;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,6 +11,8 @@ import Project0_2.util.ConnectionUtil;
 public class TransactionDao implements TransactionDaoInterface {
 
 	ConnectionUtil connectUtil = new ConnectionUtil();
+	private static Logger log = Logger.getRootLogger();
+
 	
 	public String printStatement(String username, String password) {
 		StringBuilder statement = new StringBuilder();

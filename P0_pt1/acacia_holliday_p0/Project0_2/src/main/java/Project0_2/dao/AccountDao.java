@@ -1,6 +1,8 @@
 package Project0_2.dao;
 
 import java.sql.Connection;
+
+import org.apache.log4j.Logger;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,6 +10,8 @@ import java.sql.SQLException;
 import Project0_2.util.ConnectionUtil;
 
 public class AccountDao implements AccountDaoInterface {
+	private static Logger log = Logger.getRootLogger();
+
 	private ConnectionUtil connectUtil = new ConnectionUtil();
 	
 	@Override
